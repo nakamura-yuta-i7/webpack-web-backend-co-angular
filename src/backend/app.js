@@ -8,7 +8,7 @@ var bodyParser = require('body-parser')
 var app = express()
 var debug = require('debug')('co-generators-demo:server')
 var http = require('http')
-var config = require("../config/config")
+var config = require("./config/config")
 
 
 // view engine setup
