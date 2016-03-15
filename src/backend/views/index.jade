@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1
-    a(href='/') APP:Angular1
-  gnavi
-  div(ui-view)
+  app-header
+  div.panel.panel-default
+    div(ui-view).panel-body
+  

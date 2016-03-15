@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": " concurrently 'npm run webpack:w' 'npm run supervisor' ",
-    "supervisor": "supervisor -i public,src node ./backend/dist/app",
+    "supervisor": "supervisor -w ./backend/dist/app.js node ./backend/dist/app",
     "webpack:w": "webpack --watch --progress --colors"
   },
   "dependencies": {

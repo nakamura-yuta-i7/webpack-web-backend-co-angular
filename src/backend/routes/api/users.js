@@ -3,9 +3,20 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.json({
-    yuta: "nakamura"
-  })
+  res.json([
+    {
+      id: 1,
+      name: "yuta"
+    },
+    {
+      id: 2,
+      name: "puu",
+    },
+    {
+      id: 3,
+      name: "hiromi",
+    }
+  ])
 });
 
 module.exports = router;
